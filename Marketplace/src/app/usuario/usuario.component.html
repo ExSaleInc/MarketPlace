@@ -3,10 +3,10 @@
       <div class="card-body">
         <h5 class="card-title">Faça seu login usando sua Conta Google!</h5>
         <p class="card-text">Tenha acesso aos nossos produtos através desse Login!</p>
-        <button *ngIf="auth.user" type="button" class="btn btn-primary btn-lg" (click)="loginGoogle()">Autenticação com conta Google</button>
-        <div *ngIf="auth.user | async as user;">
+        <button type="button" class="btn btn-primary btn-lg" (click)="login()">Autenticação com conta Google</button>
+        <div *ngIf="user$ | async as user">
           <h1>Olá {{ user.displayName }}!</h1>
-          <button type="button" class="btn btn-primary btn-lg" (click)="logoutGoogle()">Logout</button>
+          <button type="button" class="btn btn-primary btn-lg" (click)="logout()">Logout</button>
         </div>
       </div>
     </div>

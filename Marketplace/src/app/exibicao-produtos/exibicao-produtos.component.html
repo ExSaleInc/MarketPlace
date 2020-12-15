@@ -1,1 +1,12 @@
-<p>exibicao-produtos works!</p>
+<div class="card-group" *ngFor="let produto of Produtos | async" >
+    <div class="card">
+      <img [src]="produto.imagem" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Nome do produto: {{produto.nome}}</h5>
+        <p class="card-text">Descrição do produto: {{produto.descricao}}</p>
+      </div>
+      <div class="card-footer">
+        <h6 class="text">Preço: {{produto.preco}}</h6>
+      </div>
+    </div>
+</div>

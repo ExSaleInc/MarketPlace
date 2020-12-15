@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { DbDataMasterService } from '../db/db-data-master.service';
+import { DbMasterService } from '../db/db-master.service';
+import { StorageService } from '../storage/storage.service';
 
 @Component({
   selector: 'app-exibicao-produtos',
@@ -7,9 +11,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExibicaoProdutosComponent implements OnInit {
 
-  constructor() { }
+  Produtos: Observable<any>;
+  imagem: string;
+  constructor(
+    private dbMaster: DbMasterService,
+    private dbDataMaster: DbDataMasterService,
+    private storage: StorageService
+  ) { }
 
   ngOnInit(): void {
+    this.Produtos = this.dbMaster.getAll();
   }
 
 }
