@@ -12,12 +12,14 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFireStorageModule, BUCKET } from '@angular/fire/storage';
 
-import { environment } from '../environments/environment'
+import { environment } from '../environments/environment';
+import { ExibicaoProdutosComponent } from './exibicao-produtos/exibicao-produtos.component'
 @NgModule({
   declarations: [
     AppComponent,
     UsuarioComponent,
-    CadastroProdutosComponent
+    CadastroProdutosComponent,
+    ExibicaoProdutosComponent
   ],
   imports: [
     BrowserModule,
