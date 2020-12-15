@@ -24,6 +24,26 @@ Firebase
 
 São necessários ter instalados no pc o `Angular CLI` e `o NodeJS`, caso não tenha, basta seguir. Recomenda-se seguir a documentação oficial de instalação para seu sistema operacional.
 
+## Usando Makefile
+Pode ser utilizado o [Make File](https://github.com/ExSaleInc/MarketPlace/blob/main/Marketplace/makefile) para automatizar a instalação nas distribuições Linux.
+
+```shell
+make install
+```
+
+Para executar o script e instalar o node e todos os módulos nescessários, após usar o `make install` usamos o comando `make`:
+
+```shell
+make
+```
+
+Para buildar a aplicação basta o comando:
+```shell
+make serve
+```
+
+## Usando o terminal
+
 Para sistema baseados em `Debian/Ubuntu`:
 
 - Instale o `NodeJS/NPM`
