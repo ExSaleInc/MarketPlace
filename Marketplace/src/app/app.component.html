@@ -1,22 +1,25 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(5, 126, 65);">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">ExSale Inc.</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item" routerLink="usuario" routerLinkActive="active">
-            <a class="nav-link active" aria-current="page">Cadastro de Usuários</a>
-          </li>
-          <li class="nav-item" routerLink="cadastroprodutos" routerLinkActive="Cadastro de Produtos">
-            <a class="nav-link active">Cadastro de Produtos</a>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-light" id="header-container">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/" id="logo">ExSale Inc.</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-list">
+        <li class="nav-item" routerLink="usuario" routerLinkActive="active">
+          <a class="nav-link active" aria-current="page"
+            >Cadastro de Usuários</a
+          >
+        </li>
+        <li
+          class="nav-item"
+          routerLink="cadastroprodutos"
+          routerLinkActive="Cadastro de Produtos"
+        >
+          <a class="nav-link active">Cadastro de Produtos</a>
+        </li>
+      </ul>
     </div>
-  </nav>
-
-  <div class="container">
-    <router-outlet></router-outlet>
   </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

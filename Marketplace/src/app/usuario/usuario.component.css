@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+
+.container {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 0;
+
+  background-image: url("../../../../imagens/img/store-img.jpg");
+}
+
+.card-container {
+  margin-top: 15rem;
+
+  width: 500px;
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+  border-radius: 8px;
+}
+
+#button-style {
+  width: 250px;
+  height: 35px;
+  border: none;
+  background-color: #457b9d;
+  border-radius: 4px;
+  color: white;
+}
+
+.auth-sucess {
+  margin-top: 3rem;
+
+  width: 500px;
+  height: 140px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #caffbf;
+  border-radius: 8px;
+}

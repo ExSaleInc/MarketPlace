@@ -1,0 +1,38 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 64.5;
+} */
+
+#header-container {
+  background-color: black;
+
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+#header-container #logo {
+  color: white;
+  font-style: bold;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  margin-left: 7rem;
+}
+#header-container #nav-list li {
+  display: inline-block;
+  padding: 15px 0 10px 30px;
+}
+#header-container #nav-list li a {
+  color: white;
+}

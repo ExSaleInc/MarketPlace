@@ -1,19 +1,48 @@
-<form (ngSubmit)="onSubmit()">
+<div class="form-style">
+  <form (ngSubmit)="onSubmit()">
     <div class="mb-3">
       <label for="" class="form-label">Nome do produto</label>
-      <input type="" class="form-control" id="" [(ngModel)]="produto.nome" [ngModelOptions]="{standalone: true}" >
+      <input
+        type=""
+        class="form-control"
+        id=""
+        [(ngModel)]="produto.nome"
+        [ngModelOptions]="{ standalone: true }"
+      />
     </div>
     <div class="mb-3">
       <label for="" class="form-label">Preço do produto</label>
-      <input type="number" min="0.0" class="form-control" id="" [(ngModel)]="produto.preco" [ngModelOptions]="{standalone: true}" >
+      <input
+        type="number"
+        min="0.0"
+        class="form-control"
+        id=""
+        [(ngModel)]="produto.preco"
+        [ngModelOptions]="{ standalone: true }"
+      />
     </div>
     <div class="mb-3">
       <label for="" class="form-label">Descrição do produto</label>
-      <input type="" class="form-control" id="" [(ngModel)]="produto.descricao" [ngModelOptions]="{standalone: true}" >
+      <input
+        type=""
+        class="form-control"
+        id=""
+        [(ngModel)]="produto.descricao"
+        [ngModelOptions]="{ standalone: true }"
+      />
     </div>
     <div class="mb-3">
-      <label for="formFile" class="form-label">Default file input example</label>
-      <input class="form-control" type="file" accept="image/*" id="formFile" (change)="detectFile($event)">
+      <label for="formFile" class="form-label"
+        >Default file input example</label
+      >
+      <input
+        class="form-control"
+        type="file"
+        accept="image/*"
+        id="formFile"
+        (change)="detectFile($event)"
+      />
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+    <button type="submit" id="button-style">Submit</button>
+  </form>
+</div>
