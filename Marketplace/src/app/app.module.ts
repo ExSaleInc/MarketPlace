@@ -14,6 +14,7 @@ import { AngularFireStorageModule, BUCKET } from '@angular/fire/storage';
 
 import { environment } from '../environments/environment';
 import { ExibicaoProdutosComponent } from './exibicao-produtos/exibicao-produtos.component'
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { ExibicaoProdutosComponent } from './exibicao-produtos/exibicao-produtos
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
