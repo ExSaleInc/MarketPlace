@@ -31,13 +31,13 @@ Pode ser utilizado o [Make File](https://github.com/ExSaleInc/MarketPlace/blob/m
 make install
 ```
 
-Para executar o script e instalar o node e todos os módulos nescessários, após usar o `make install` usamos o comando `make`:
+Para executar o script e instalar o node e todos os módulos nescessários, após usar o `make install` usamos o comando `make`, para instalar o projeto e buildar:
 
 ```shell
 make
 ```
 
-Para buildar a aplicação basta o comando:
+Para buildar a aplicação e iniciar um servidor local basta o comando:
 ```shell
 make serve
 ```
